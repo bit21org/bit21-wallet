@@ -1,0 +1,31 @@
+{
+  "name": "bit21-mobile",
+  "version": "1.0.0",
+  "description": "bit21 Bitcoin Wallet - Native App",
+  "scripts": {
+    "build:web": "cd ../frontend && npx vite build",
+    "sync": "npx cap sync",
+    "open:android": "npx cap open android",
+    "build": "npm run build:web && npm run sync",
+    "run:android": "npx cap run android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.2.0",
+    "@capacitor/app": "^8.0.1",
+    "@capacitor/browser": "^8.0.2",
+    "@capacitor/cli": "^8.2.0",
+    "@capacitor/clipboard": "^8.0.1",
+    "@capacitor/core": "^8.2.0",
+    "@capacitor/haptics": "^8.0.1",
+    "@capacitor/local-notifications": "^8.0.2",
+    "@capacitor/push-notifications": "^8.0.2",
+    "@capacitor/share": "^8.0.1",
+    "@capacitor/splash-screen": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.1",
+    "capacitor-native-biometric": "^4.2.2",
+    "capacitor-native-settings": "^8.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

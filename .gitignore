@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+*.apk
+*.aab
+*.ipa
+
+# Environment & secrets — nothing sensitive should ever land in this repo
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+keystore.properties
+google-services.json
+GoogleService-Info.plist
+firebase-adminsdk*.json
+
+# Local Android config
+mobile/android/local.properties
+mobile/android/**/.gradle/
+mobile/android/**/build/
+mobile/android/.idea/
+mobile/android/app/src/main/assets/public/
+mobile/android/app/release/
+mobile/android/captures/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Coverage + tests
+coverage/
+.nyc_output/
+
+# Vite
+frontend/.vite/
+frontend/*.tsbuildinfo
+
+# Capacitor
+mobile/www/
+
+# Defense-in-depth — block common secret-file names even if someone tries to commit them
+master.key
+admin.secret
+serviceAccountKey.json
+vapid.json
+seed_storage/
+audit.log
+push_subscriptions.json
+users.json
+vaults.json
+fcm_tokens.json

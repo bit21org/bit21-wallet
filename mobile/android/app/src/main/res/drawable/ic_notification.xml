@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Bitcoin B symbol for notification icon (must be white/transparent for Android) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM13.41,17.09V19h-1.71v-1.85c-1.19,-0.12 -2.31,-0.57 -3.04,-1.2l1.09,-1.71c0.63,0.48 1.44,0.85 2.29,0.93 0.7,0.06 1.63,-0.15 1.63,-0.97 0,-0.78 -0.78,-1.01 -1.98,-1.37 -1.51,-0.45 -3.04,-1.07 -3.04,-2.96 0,-1.51 1.04,-2.68 2.75,-3.01V5h1.71v1.84c0.93,0.1 1.78,0.38 2.51,0.83l-0.95,1.68c-0.56,-0.34 -1.2,-0.58 -1.87,-0.63 -0.83,-0.07 -1.69,0.24 -1.69,0.97 0,0.69 0.72,0.95 1.72,1.25 1.6,0.48 3.3,1.07 3.3,3.1 0,1.65 -1.14,2.79 -2.72,3.06z"/>
+</vector>

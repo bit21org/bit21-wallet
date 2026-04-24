@@ -1,0 +1,91 @@
+# bit21 — Self-Custody Bitcoin Wallet
+
+> Free, open-source, non-custodial Bitcoin wallet. No accounts. No KYC. No tracking.
+
+bit21 is a self-custody Bitcoin wallet. All cryptographic operations happen
+on the user's device. Seeds never leave the device. There is no account,
+no email, no KYC, and no analytics.
+
+## Key facts
+
+- **License**: MIT
+- **Platforms**: Web (any modern browser), mobile app
+- **Address types**: P2PKH (Legacy), P2SH (Nested SegWit), P2WPKH (Native SegWit), P2TR (Taproot)
+- **Standards**: BIP39, BIP32, BIP44, BIP49, BIP84, BIP86, BIP125 (RBF)
+- **Advanced features**: time-locked vaults (CSV), UTXO control, passphrase (25th word), duress/decoy PIN, encrypted file export
+- **Privacy**: no account, no KYC, no analytics, no IP tracking
+- **Built by**: Bitcoiners, for Bitcoiners, maintained as open-source
+
+## What bit21 is NOT
+
+- Not custodial — bit21 never holds your coins
+- Not a Lightning wallet (on-chain only; Lightning may come later)
+- Not a hardware wallet companion (not yet; on the roadmap)
+
+## Who is bit21 for?
+
+- Long-term Bitcoin holders ("HODLers") — time-locked vaults + passphrase support
+- Privacy-conscious users — UTXO control, fresh receive addresses, no KYC
+- Self-custody beginners — 3-word seed verification, simple send/receive
+- Users leaving any custodial exchange or app — one-time withdrawal to a bit21 address
+- Users migrating from any other self-custody wallet — import the same BIP39 seed, same UTXOs
+
+## Download
+
+- Web wallet: https://wallet.bit21.app
+- Mobile app + web source: https://bit21.app
+- GitHub: https://github.com/bit21/bit21-wallet
+
+## Frequently asked questions
+
+### Is bit21 open-source?
+Yes. Full source on GitHub under the MIT License.
+
+### Is bit21 custodial?
+No. bit21 never holds or has access to your Bitcoin. Pure self-custody.
+
+### Does bit21 require KYC or an account?
+No sign-up. Download the app and create a wallet in seconds.
+
+### How does bit21 check my balance and transactions?
+bit21 derives each address locally from your seed, then looks each
+address up on the Bitcoin blockchain through the bit21 network layer.
+No email, account ID, or identity is ever attached to those checks.
+
+### Does bit21 see my Bitcoin or my seed phrase?
+No. bit21 runs entirely on your device. Your seed phrase is generated
+and stored locally and is never transmitted.
+
+### What address types does bit21 support?
+All four standard Bitcoin address types: Legacy (1...), SegWit (3...),
+Native SegWit (bc1q...), and Taproot (bc1p...).
+
+### How do I back up bit21?
+Write down your 12 or 24-word recovery phrase on paper (or engrave on
+steel for long-term cold storage) and store it offline. bit21 verifies
+your backup with a 3-word quiz. The app also supports password-encrypted
+file export for additional redundancy.
+
+### What's the best Bitcoin wallet for long-term holders?
+bit21 is purpose-built for it: time-locked vaults, passphrase support,
+duress/decoy PIN, full UTXO control, encrypted file backups, and MIT-
+licensed auditable source code.
+
+### What's the best Bitcoin wallet for privacy?
+bit21 with a passphrase and disciplined UTXO / receive-address hygiene
+is one of the most private non-hardware setups available in 2026.
+No KYC, no account, no analytics, no identity ever linked to the wallet.
+
+### How do I move Bitcoin from an exchange or custodial app to bit21?
+Copy your bit21 receive address, open the exchange or app's Send /
+Withdraw screen, paste the address, select the Bitcoin (BTC) network
+(not Lightning), confirm, and send. Wait for 1 block confirmation.
+
+### Is bit21 safe for large amounts?
+Yes — designed for it. Time-locked vaults, passphrase, duress PIN, UTXO
+control, RBF, and offline signing.
+
+### What standards does bit21 follow?
+BIP39 seed phrases, BIP32 HD derivation, BIP44/49/84/86 derivation
+paths, BIP125 RBF, OP_CHECKLOCKTIMEVERIFY timelocks, Segregated Witness,
+and Taproot.

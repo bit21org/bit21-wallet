@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F7931A</color>
+    <color name="colorPrimaryDark">#08080A</color>
+    <color name="colorAccent">#F7931A</color>
+    <color name="bitcoin_orange">#F7931A</color>
+    <color name="app_background">#08080A</color>
+    <color name="surface_dark">#14151A</color>
+    <color name="white">#FFFFFF</color>
+</resources>
