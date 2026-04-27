@@ -46,6 +46,32 @@ jobs:
           rm -rf mobile/android/app/src/main/assets/public
           mkdir -p mobile/android/app/src/main/assets/public
           cp -r frontend/dist/* mobile/android/app/src/main/assets/public/
+      - name: Create stub google-services.json for CI build
+        # The Capacitor push-notifications plugin pulls in Firebase Messaging
+        # which requires a google-services.json at compile time. The real
+        # config is gitignored and only present in the official release build.
+        # This stub lets the public CI build complete; the resulting APK
+        # is a sanity-check artifact only and has no working push backend.
+        run: |
+          cat > mobile/android/app/google-services.json <<'EOF'
+          {
+            "project_info": {
+              "project_number": "000000000000",
+              "project_id": "bit21-ci-stub",
+              "storage_bucket": "bit21-ci-stub.appspot.com"
+            },
+            "client": [{
+              "client_info": {
+                "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+                "android_client_info": { "package_name": "com.bit21.wallet" }
+              },
+              "oauth_client": [],
+              "api_key": [{ "current_key": "stub-key-for-ci-only" }],
+              "services": { "appinvite_service": { "other_platform_oauth_client": [] } }
+            }],
+            "configuration_version": "1"
+          }
+          EOF
       - run: chmod +x ./gradlew
         working-directory: mobile/android
       - run: ./gradlew assembleDebug
