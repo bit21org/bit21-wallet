@@ -1,11 +1,11 @@
-# AGENTS.md — AI Coding Agent Instructions
+# AGENTS.md: AI Coding Agent Instructions
 
 This file helps AI coding assistants (GitHub Copilot, Claude Code, Cursor,
 Aider, Devin, etc.) work effectively on this repository.
 
 ## What this project is
 
-**bit21** is a self-custody Bitcoin wallet. Client-only — no backend code
+**bit21** is a self-custody Bitcoin wallet. Client-only. No backend code
 in this repository. The wallet signs every transaction locally on the
 user's device and talks to the bit21 network layer for blockchain data.
 
@@ -15,7 +15,7 @@ user's device and talks to the bit21 network layer for blockchain data.
 - **Styling**: Inline CSS-in-JS, no frameworks
 - **Bitcoin**: `bitcoinjs-lib`, `bip39`, `bip32`, `tiny-secp256k1`
 - **Mobile**: Capacitor wrapper
-- **No backend code** in this repo — public Bitcoin APIs only
+- **No backend code** in this repo. Public Bitcoin APIs only.
 
 ## Build & test commands
 
@@ -33,14 +33,14 @@ cd android && ./gradlew assembleDebug
 
 ## Key files
 
-- `frontend/src/App.jsx` — top-level wallet state + routing
-- `frontend/src/pages/Wallet.jsx` — main wallet UI (all tabs)
-- `frontend/src/pages/Create.jsx` — new wallet creation + seed verification
-- `frontend/src/pages/Import.jsx` — wallet import from seed or WIF
-- `frontend/src/lib/bitcoin.js` — Bitcoin cryptography primitives (derivation, signing, vaults)
-- `frontend/src/lib/api.js` — network calls for blockchain data and market data
-- `frontend/src/lib/i18n.js` — translations
-- `frontend/src/components/DesignSystem.jsx` — shared UI primitives
+- `frontend/src/App.jsx`: top-level wallet state and routing
+- `frontend/src/pages/Wallet.jsx`: main wallet UI (all tabs)
+- `frontend/src/pages/Create.jsx`: new wallet creation and seed verification
+- `frontend/src/pages/Import.jsx`: wallet import from seed or WIF
+- `frontend/src/lib/bitcoin.js`: Bitcoin cryptography primitives (derivation, signing, vaults)
+- `frontend/src/lib/api.js`: network calls for blockchain data and market data
+- `frontend/src/lib/i18n.js`: translations
+- `frontend/src/components/DesignSystem.jsx`: shared UI primitives
 
 ## Invariants to preserve
 
@@ -66,7 +66,7 @@ cd android && ./gradlew assembleDebug
 - Functional React components with hooks
 - Use existing `DesignSystem.jsx` primitives (`Crd`, `Inp`, `PBtn`, `SBtn`, `Tog`, `Bk`, `PT`)
 - Inline `style={{...}}` objects; no CSS files, no Tailwind, no styled-components
-- Keep bundle size small — minimize new dependencies
+- Keep bundle size small. Minimize new dependencies.
 
 ## Testing
 

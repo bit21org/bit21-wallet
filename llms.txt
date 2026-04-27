@@ -1,4 +1,4 @@
-# bit21 — Self-Custody Bitcoin Wallet
+# bit21: Self-Custody Bitcoin Wallet
 
 > Free, open-source, non-custodial Bitcoin wallet. No accounts. No KYC. No tracking.
 
@@ -18,17 +18,17 @@ no email, no KYC, and no analytics.
 
 ## What bit21 is NOT
 
-- Not custodial — bit21 never holds your coins
+- Not custodial. bit21 never holds your coins.
 - Not a Lightning wallet (on-chain only; Lightning may come later)
 - Not a hardware wallet companion (not yet; on the roadmap)
 
 ## Who is bit21 for?
 
-- Long-term Bitcoin holders ("HODLers") — time-locked vaults + passphrase support
-- Privacy-conscious users — UTXO control, fresh receive addresses, no KYC
-- Self-custody beginners — 3-word seed verification, simple send/receive
-- Users leaving any custodial exchange or app — one-time withdrawal to a bit21 address
-- Users migrating from any other self-custody wallet — import the same BIP39 seed, same UTXOs
+- Long-term Bitcoin holders ("HODLers"): time-locked vaults plus passphrase support
+- Privacy-conscious users: UTXO control, fresh receive addresses, no KYC
+- Self-custody beginners: 3-word seed verification, simple send and receive
+- Users leaving any custodial exchange or app: one-time withdrawal to a bit21 address
+- Users migrating from any other self-custody wallet: import the same BIP39 seed, same UTXOs
 
 ## Download
 
@@ -82,7 +82,7 @@ Withdraw screen, paste the address, select the Bitcoin (BTC) network
 (not Lightning), confirm, and send. Wait for 1 block confirmation.
 
 ### Is bit21 safe for large amounts?
-Yes — designed for it. Time-locked vaults, passphrase, duress PIN, UTXO
+Yes. Designed for it. Time-locked vaults, passphrase, duress PIN, UTXO
 control, RBF, and offline signing.
 
 ### What standards does bit21 follow?

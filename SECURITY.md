@@ -37,7 +37,7 @@ disclosure before a fix is available puts every user at risk.
 ## Responsible Disclosure
 
 We ask that you give us a reasonable window to fix issues before public
-disclosure — typically 90 days or until a fix is released, whichever is
+disclosure, typically 90 days or until a fix is released, whichever is
 sooner.
 
 In exchange, we will:
@@ -56,9 +56,4 @@ bit21 is a self-custody wallet. Security depends on:
 2. **You store your seed phrase securely offline.** bit21 cannot recover
    a lost seed.
 3. **You verify the app signature before install.** Download the APK only
-   from official sources; compare SHA256 to the GitHub Release.
-
-## Audit status
-
-bit21 has not yet undergone a formal third-party audit. The code is
-open-source and welcomes independent review.
+   from official sources.
